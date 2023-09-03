@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .header {
@@ -39,9 +40,20 @@ a {
 
 .first-section-image {
     background-color: gray;
-    width: 150px;
+    width: 300px;
     height: 150px;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 15px; */
+}
+
+.hero-text-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 8px;
+    padding: 4px 16px;
+    border: none;
 }
 
 .second-section {
@@ -82,14 +94,26 @@ a {
 .quote,
 .quote-source {
     display: flex;
-    max-width: 60%;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    padding-top: 36px;
+}
+
+.quote-source {
+    align-self: flex-end;
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 36px;
 }
 
 .fourth-section {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .fourth-section-main {
@@ -103,6 +127,24 @@ a {
     padding: 16px 32px;
     gap: 32px;
     color: #E5E7EB;
+}
+
+.fourth-section-text-box {
+    max-width: 60%;
+    padding: 16px 32px;
+}
+
+.fourth-section-bold {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fourth-section-button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 8px;
+    padding: 4px 16px;
+    border: 2px solid #E5E7EB;
 }
 
 .footer {
